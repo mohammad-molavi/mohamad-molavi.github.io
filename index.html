@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رزومه محمد مولوی | مهندس کامپیوتر</title>
+    <style>
+        :root {
+            --primary-color: #4361ee;
+            --secondary-color: #3a0ca3;
+            --accent-color: #f72585;
+            --text-color: #2b2d42;
+            --light-bg: #f8f9fa;
+            --dark-bg: #1a1a2e;
+            --card-bg: #ffffff;
+            --font-primary: 'Vazirmatn', 'Tahoma', sans-serif;
+        }
+        
+        @font-face {
+            font-family: 'Vazirmatn';
+            src: url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/fonts/webfonts/Vazirmatn-Regular.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        body {
+            font-family: var(--font-primary);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: var(--text-color);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: var(--card-bg);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 10px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            right: 0;
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            border-radius: 2px;
+        }
+        
+        h1 {
+            color: var(--dark-bg);
+            margin-bottom: 10px;
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+        
+        header p {
+            color: var(--secondary-color);
+            font-size: 1.1rem;
+            margin-top: 0;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            border-right: 4px solid var(--accent-color);
+            padding-right: 15px;
+            margin-top: 40px;
+            font-size: 1.5rem;
+            position: relative;
+        }
+        
+        .section {
+            margin-bottom: 35px;
+            position: relative;
+        }
+        
+        ul {
+            padding-right: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            position: relative;
+        }
+        
+        li::before {
+            content: '•';
+            color: var(--accent-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-right: -1em;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(67, 97, 238, 0.1);
+            padding: 10px 20px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-item:hover {
+            background: rgba(67, 97, 238, 0.2);
+            transform: translateY(-3px);
+        }
+        
+        .contact-item a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        
+        .skill {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 8px 18px;
+            border-radius: 50px;
+            font-size: 0.9em;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .skill:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+                margin: 20px 10px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>محمد مولوی</h1>
+            <p>دانشجوی مهندسی کامپیوتر | توسعه دهنده وب | تولیدکننده محتوا</p>
+        </header>
+
+        <section class="section">
+            <h2>اطلاعات شخصی</h2>
+            <ul>
+                <li><strong>تاریخ تولد:</strong> بهمن ۱۳۸۱</li>
+                <li><strong>محل سکونت:</strong> کرمانشاه، ایران</li>
+                <li><strong>وضعیت تاهل:</strong> مجرد</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>تحصیلات</h2>
+            <p><strong>دانشگاه رازی کرمانشاه</strong></p>
+            <p>کارشناسی مهندسی کامپیوتر - گرایش نرم افزار</p>
+            <p>سال ورود: ۱۴۰۰ | در حال تحصیل</p>
+        </section>
+
+        <section class="section">
+            <h2>مهارت‌ها</h2>
+            <div class="skills">
+                <span class="skill">HTML/CSS</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">Git/GitHub</span>
+                <span class="skill">Adobe Premiere</span>
+                <span class="skill">Photoshop</span>
+                <span class="skill">تولید محتوا</span>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>سوابق کاری</h2>
+            <p><strong>تولید محتوا و ویرایش ویدیو</strong></p>
+            <p>۱۳۹۹-۱۴۰۰ | پروژه‌های شخصی</p>
+            <ul>
+                <li>ساخت کلیپ‌های آموزشی و سرگرمی</li>
+                <li>ویرایش ویدیو با نرم‌افزارهای حرفه‌ای</li>
+                <li>طراحی پوستر و محتوای گرافیکی</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>علایق و اهداف</h2>
+            <ul>
+                <li>توسعه مهارت‌های برنامه‌نویسی وب</li>
+                <li>یادگیری فریمورک‌های مدرن مانند React</li>
+                <li>تولید محتواهای کاربردی و هدفمند</li>
+                <li>ادغام مهارت‌های تولید محتوا با برنامه‌نویسی</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>تماس با من</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📧 ایمیل:</span>
+                    <a href="mailto:mohammad.molavie.4002103040.com">mohammad.molavie.4002103040.com</a>
+                </div>
+                <div class="contact-item">
+                    <span>🔗 گیتهاب:</span>
+                    <a href="https://github.com/mohammad-molavi" target="_blank">github.com/mohammad-molavi</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
